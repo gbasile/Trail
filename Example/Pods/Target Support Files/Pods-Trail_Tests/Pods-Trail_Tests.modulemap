@@ -1,0 +1,6 @@
+framework module Pods_Trail_Tests {
+  umbrella header "Pods-Trail_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

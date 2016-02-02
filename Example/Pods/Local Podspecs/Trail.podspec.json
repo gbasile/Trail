@@ -1,0 +1,25 @@
+{
+  "name": "Trail",
+  "version": "0.1.0",
+  "summary": "A short description of Trail.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Trail",
+  "license": "MIT",
+  "authors": {
+    "Giuseppe Basile": "giuseppe@theappbusiness.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Trail.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "Trail": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
