@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		9A70AD041232FC8F41B9B36F /* Pods_Trail_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDEA3B03E7372CDEA7455015 /* Pods_Trail_Example.framework */; };
+		B8740EDB1C6271ED00413971 /* UserAgentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8740EDA1C6271ED00413971 /* UserAgentRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8D1F0E87CA3D96F66B7C0807 /* Pods-Trail_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trail_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trail_Tests/Pods-Trail_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A1F80971990ED8360E9E518F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B8740EDA1C6271ED00413971 /* UserAgentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAgentRequest.swift; sourceTree = "<group>"; };
 		CAAC4A67255F9273762975F3 /* Pods-Trail_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trail_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trail_Example/Pods-Trail_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CBFAFA59744BBC04A3E352EA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E138A5C890F251E8122525FB /* Pods-Trail_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trail_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trail_Tests/Pods-Trail_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		607FACD21AFB9204008FA782 /* Example for Trail */ = {
 			isa = PBXGroup;
 			children = (
+				B8740ED91C62713C00413971 /* Requests */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -146,6 +149,14 @@
 				CBFAFA59744BBC04A3E352EA /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		B8740ED91C62713C00413971 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				B8740EDA1C6271ED00413971 /* UserAgentRequest.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 		E0B5C1D0AA88938DC0A5A99F /* Pods */ = {
@@ -359,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8740EDB1C6271ED00413971 /* UserAgentRequest.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -492,7 +504,7 @@
 				INFOPLIST_FILE = Trail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pebasile.demo.Trail-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -505,7 +517,7 @@
 				INFOPLIST_FILE = Trail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pebasile.demo.Trail-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

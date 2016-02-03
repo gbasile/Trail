@@ -7,18 +7,30 @@
 //
 
 import UIKit
+import Trail
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+  override func viewDidAppear(animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    let request = TrailRequest(path: "https://httpbin.org/get", method: .GET) { (result) -> Void in
+      switch result {
+      case .Success(_):
+        print("Successfull call")
+      case .Failure(let error):
+        print("Error: \(error)")
+      }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
+    Trail.request(request)
+    Trail.request(UserAgentRequest(callback: { (result) -> Void in
+      switch result {
+      case .Success(let data):
+        print("User Agent \(data)")
+      case .Failure(let error):
+        print("Error: \(error)")
+      }
+    }))
+  }
 }
 

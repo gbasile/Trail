@@ -1,7 +1,9 @@
 PODS:
+  - Alamofire (3.1.5)
   - Nimble (3.0.0)
   - Quick (0.8.0)
-  - Trail (0.1.0)
+  - Trail (0.1.0):
+    - Alamofire (~> 3.1.5)
 
 DEPENDENCIES:
   - Nimble (= 3.0.0)
@@ -13,8 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
-  Trail: ba0a7b80f49d32ec1bfd2da9693400a72bf65417
+  Trail: fda477c1a241515cb68004ced6ad255e0527e4c6
 
 COCOAPODS: 0.39.0
