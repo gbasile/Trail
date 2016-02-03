@@ -25,7 +25,7 @@ public class Trail {
 internal func convertResponseToResult(response: NSHTTPURLResponse?, data: NSData?, error: NSError?) ->
   Result<AnyObject, NSError> {
     switch (response, data, error) {
-    case let (.Some(response), .Some(data), .None):
+    case let (.Some(_), .Some(data), .None):
       return .Success(data)
     case let (_, _, .Some(error)):
       return Result.Failure(error)

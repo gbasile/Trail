@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Trail"
-  s.version          = "0.1.0"
+  s.version          = "0.0.1"
   s.summary          = "Swift Networking abstraction"
 
 # This description is used to generate tags and improve search results.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-    Swift Networking abstraction
+    Swift Networking abstraction for basic JSON parsing
                        DESC
 
   s.homepage         = "https://github.com/gbasile/Trail"

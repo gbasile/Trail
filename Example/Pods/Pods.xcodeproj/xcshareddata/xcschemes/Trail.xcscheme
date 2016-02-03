@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F5ED8C1AFFD34529FDA56420'
+               BlueprintIdentifier = '2D515D55D8BABACBD1EB87BC'
                BlueprintName = 'Trail'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Trail.framework'>
